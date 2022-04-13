@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
 
-export default props => {
+export default (props) => {
   return (
     <div>
       <Row noGutters className="text-center align-items-center pizza-cta">
@@ -13,7 +13,7 @@ export default props => {
           <Button
             color="none"
             className="book-table-btn"
-            onClick={_ => {
+            onClick={(_) => {
               props.setPage(1);
             }}
           >
@@ -24,7 +24,7 @@ export default props => {
       <Row noGutters className="text-center big-img-container">
         <Col>
           <img
-            src={require("../images/cafe.jpg")}
+            src={require("../images/cafe1.jpg")}
             alt="cafe"
             className="big-img"
           />

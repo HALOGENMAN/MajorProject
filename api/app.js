@@ -7,11 +7,11 @@ const cors = require("cors");
 
 // MongoDB
 var mongoose = require("mongoose");
-mongoose.connect(process.env.MONGO_URL, {
-  useUnifiedTopology: true,
-  useNewUrlParser: true
-});
-var db = mongoose.connection;
+// mongoose.connect(process.env.MONGO_URL, {
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true,
+// });
+// var db = mongoose.connection;
 
 // Express
 var app = express();
@@ -25,9 +25,19 @@ app.use(cookieParser());
 app.use("/availability", require("./routes/availabilityRoute"));
 app.use("/reserve", require("./routes/reservationRoute"));
 
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", _ => {
-  console.log("Connected to DB");
-});
+// db.on("error", console.error.bind(console, "connection error:"));
+// db.once("open", (_) => {
+//   console.log("Connected to DB");
+// });
 
-module.exports = app;
+// module.exports = app;"dev": "nodemon ./bin/www",
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+  })
+  .then(() => {
+    app.listen(3005);
+    console.log("connected to port 3005", "Connected to DB");
+  })
+  .catch((err) => console.log(err));

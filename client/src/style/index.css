@@ -1,5 +1,6 @@
 body {
   font-family: ABeeZee, sans-serif;
+  background: linear-gradient(to top, #831836, #bd5022, white, white);
 }
 
 .nav-brand {
@@ -20,7 +21,7 @@ body {
 .pizza-slice {
   font-size: 1.2rem;
   padding-left: 1.25%;
-  color: #e74c3c;
+  color: #ea7230;
 }
 
 .pizza-cta {
@@ -39,12 +40,12 @@ body {
   font-size: 1.2rem;
   padding: 2% 8%;
   border-radius: 25px;
-  background-color: #e74c3c;
+  background-color: #ea7230;
   border: 2px white solid;
   font-family: ABeeZee, sans-serif;
 }
 .book-table-btn:hover {
-  color: #e74c3c;
+  color: #ea7230;
   background-color: white !important;
   border: 2px solid black !important;
 }
@@ -75,12 +76,12 @@ body {
   padding-bottom: 2%;
 }
 
-input[type=date]::-webkit-inner-spin-button {
+input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
   display: none;
 }
@@ -88,7 +89,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .booking-dropdown {
   width: 85%;
   padding: 4% 0;
-  background-color: #e74c3c;
+  background-color: #ea7230;
   color: white;
   margin: 2% 0;
   font-family: "Roboto";
@@ -98,7 +99,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: center;
 }
 .booking-dropdown:hover {
-  background-color: #e74c3c;
+  background-color: #ea7230;
   color: white;
 }
 .booking-dropdown:focus {
@@ -129,7 +130,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .tables-display {
-  background-color: #e74c3c;
+  background-color: #ea7230;
   margin: 10% 2%;
   padding: 3% 5%;
   border-radius: 25px;
@@ -183,7 +184,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .empty-table {
-  background-color: #e74c3c;
+  background-color: #ea7230;
   border: solid 2px white;
   border-radius: 50%;
   padding: 1px 10px;
@@ -236,7 +237,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .thank-you-pizza {
   font-size: 4rem;
-  color: #e74c3c;
+  color: #ea7230;
   padding-bottom: 8%;
 }
 
